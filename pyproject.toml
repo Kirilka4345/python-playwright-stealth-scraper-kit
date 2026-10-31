@@ -6,14 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "playwright-stealth-scraper"
 version = "1.1.0"
 authors = [
-  { name="Kirill", email="kirillopen4345@gmail.com" },
+  { name="Kirill" },
 ]
-description = "Production-grade Async Playwright Stealth Web Scraper with Anti-Bot Fingerprint Evasion"
+description = "A synchronous Playwright example with a persistent Chromium profile."
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Internet :: WWW/HTTP :: Browsers",
 ]
@@ -23,5 +22,7 @@ dependencies = [
 
 [project.urls]
 "Homepage" = "https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit"
-"Commercial License" = "https://kirillopen.gumroad.com/l/xjajr"
-"Funding" = "https://kirillopen.gumroad.com"
+
+
+[tool.setuptools]
+py-modules = ["stealth_scraper"]

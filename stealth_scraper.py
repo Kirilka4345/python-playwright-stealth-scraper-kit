@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Production Playwright Stealth Scraper Kit with Anti-Bot Bypass."""
+"""Synchronous browser-automation example. Patches do not guarantee access."""
 import sys
 import json
 import time
@@ -7,7 +7,8 @@ import random
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
-sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 CONFIG = {
     "HEADLESS": True,
@@ -34,7 +35,6 @@ def run_stealth_scrape(target_url: str):
             user_data_dir=CONFIG["USER_DATA_DIR"],
             headless=CONFIG["HEADLESS"],
             args=[
-                "--no-sandbox",
                 "--disable-dev-shm-usage",
                 "--disable-blink-features=AutomationControlled",
                 "--disable-infobars"
@@ -58,4 +58,3 @@ def run_stealth_scrape(target_url: str):
 if __name__ == "__main__":
     test_url = "https://example.com"
     run_stealth_scrape(test_url)
-

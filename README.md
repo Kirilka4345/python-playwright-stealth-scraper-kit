@@ -1,75 +1,50 @@
-# ⚡ python-playwright-stealth-scraper-kit
+# Playwright Browser Automation Starter
 
-> **Production-grade Async & Playwright Stealth Web Scraper Pipeline with Anti-Bot Fingerprint Evasion & JSON/CSV Export.**
+A synchronous Playwright example with a persistent Chromium profile.
 
-[![Latest Release](https://img.shields.io/github/v/release/Kirilka4345/python-playwright-stealth-scraper-kit?style=for-the-badge&logo=github&color=success)](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases/latest)
-[![Download Zip](https://img.shields.io/badge/Download_v1.0.0-ZIP-blue?style=for-the-badge&logo=zip)](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases/download/v1.0.0/Python-Playwright-Stealth-Scraper-Kit-v1.0.zip)
-[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
-[![Tests: Passing](https://img.shields.io/badge/Tests-3%2F3%20Passing-success?style=for-the-badge&logo=python)](tests/test_scraper.py)
-[![Buy on Gumroad](https://img.shields.io/badge/Buy_on_Gumroad-$29-ff90e8?style=for-the-badge&logo=gumroad)](https://kirillopen.gumroad.com/l/xjajr)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+**Status: development starter / prototype.** Read the scope before integrating.
 
----
+## Included
 
+- Opens a page and returns its title and HTML character count.
+- Includes optional browser initialization patches and a small unit suite.
 
-> 🛍️ **Instant Download & Commercial License:** [Buy Playwright Stealth Scraper Kit on Gumroad ($29)](https://kirillopen.gumroad.com/l/xjajr)
+## Scope and limitations
 
-## 🚀 Overview
+- No proxy rotation, JSON/CSV export pipeline or guaranteed anti-bot bypass.
+- config.example.json is a reference; runtime settings live in CONFIG in stealth_scraper.py.
+- Browser patches are experimental. Use only on websites you are authorized to automate.
 
-Stop getting blocked by automated bot detection systems, Cloudflare turnstiles, and aggressive browser fingerprinting. **python-playwright-stealth-scraper-kit** is a lightweight, clean, modular boilerplate designed for high-speed automated data collection, testing, and monitoring.
+## Quick start
 
-### 🛡️ Evasion Capabilities Built-In
-- **`navigator.webdriver` removal:** Overrides native automation flags to prevent headless detection.
-- **Chrome Runtime Emulation:** Injects authentic `window.chrome` runtime objects and load time metrics.
-- **Plugin & Mime Array Mocking:** Mimics standard desktop Chromium installations.
-- **Persistent Context Support:** Preserves session cookies, localStorage, and cached tokens in `.stealth_profile/`.
-- **Human-like Delays:** Built-in randomized jitter intervals to prevent rate-limit trips.
+Python 3.10+; run from the repository directory.
 
----
-
-## ⚡ Quickstart
-
-### 1. Installation
-Clone this repository or [download the release archive](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases/download/v1.0.0/Python-Playwright-Stealth-Scraper-Kit-v1.0.zip):
-
-```bash
-git clone https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit.git
-cd python-playwright-stealth-scraper-kit
-pip install -r requirements.txt
-playwright install chromium
-```
-
-### 2. Configuration
-Review and customize `config.example.json`:
-```json
-{
-  "headless": true,
-  "user_data_dir": ".stealth_profile",
-  "timeout_ms": 30000,
-  "output_format": "json"
-}
-```
-
-### 3. Run
-Launch via Python or double-click `run_scraper.bat` on Windows:
-```bash
+```sh
+python -m pip install -r requirements.txt
+python -m playwright install chromium
 python stealth_scraper.py
 ```
 
----
+## Validation
 
-## 💼 Turnkey Scraper Development & Freelance Orders
+```sh
+python -m unittest discover -s tests -v
+```
 
-Need a custom, production-grade parser for an enterprise platform, real-time price tracker, or automated multi-account pipeline?
+The original unit checks cover configuration and patch strings; they do not validate website compatibility.
 
-I build bespoke automation solutions:
-- **Target Platforms:** E-commerce catalogs, marketplace aggregators, real estate, financial data, and social media.
-- **Delivery Formats:** Automated Excel (.xlsx) reports, PostgreSQL / SQLite databases, REST APIs, or real-time Telegram notification bots.
-- **Infrastructure:** Ready to run on any Linux VPS or serverless Docker container.
+## Repository map
 
-### 📩 Contact & Inquiries
-- **GitHub:** [@Kirilka4345](https://github.com/Kirilka4345)
-- **Direct Crypto Licensing ($15 – $49):**
-  - **TON:** `UQCwrgVAYHvlJe87-eOAK01ZzMW42E17YnbCyWPPkKeLhEpP`
-  - **USDT (TRC-20):** `TXCYzTR3Br4MuWXUnGRvpA3EaYC7iyydYj`
-  - **EVM (Base / ETH):** `0x12f0a957bd351492252aac81198edba4c5a56790`
+- `stealth_scraper.py` — implementation.
+- `tests/` — current checks and regression tests.
+- [CHANGELOG.md](CHANGELOG.md) — changes and verification limits.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — issue and change guidelines.
+
+## Downloads and usage terms
+
+[Repository releases](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases) contain historical snapshots; use the current source for the documented fixes.
+No LICENSE file is present. Earlier MIT badges and commercial-license claims did not establish usable license terms. License terms require clarification before redistribution.
+
+## Questions
+
+For reproducible technical issues, use [GitHub Issues](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/issues). Include the commit, runtime version, expected result and minimal reproduction. Never include tokens, cookies or customer data.
