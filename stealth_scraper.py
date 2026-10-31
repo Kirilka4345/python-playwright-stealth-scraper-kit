@@ -58,3 +58,4 @@ def run_stealth_scrape(target_url: str):
 if __name__ == "__main__":
     test_url = "https://example.com"
     run_stealth_scrape(test_url)
+
