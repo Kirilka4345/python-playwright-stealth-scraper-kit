@@ -5,6 +5,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/Kirilka4345/python-playwright-stealth-scraper-kit?style=for-the-badge&logo=github&color=success)](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases/latest)
 [![Download Zip](https://img.shields.io/badge/Download_v1.0.0-ZIP-blue?style=for-the-badge&logo=zip)](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases/download/v1.0.0/Python-Playwright-Stealth-Scraper-Kit-v1.0.zip)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
+[![Tests: Passing](https://img.shields.io/badge/Tests-3%2F3%20Passing-success?style=for-the-badge&logo=python)](tests/test_scraper.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
