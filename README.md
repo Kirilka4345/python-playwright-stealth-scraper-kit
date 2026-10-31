@@ -6,9 +6,13 @@
 [![Download Zip](https://img.shields.io/badge/Download_v1.0.0-ZIP-blue?style=for-the-badge&logo=zip)](https://github.com/Kirilka4345/python-playwright-stealth-scraper-kit/releases/download/v1.0.0/Python-Playwright-Stealth-Scraper-Kit-v1.0.zip)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Tests: Passing](https://img.shields.io/badge/Tests-3%2F3%20Passing-success?style=for-the-badge&logo=python)](tests/test_scraper.py)
+[![Buy on Gumroad](https://img.shields.io/badge/Buy_on_Gumroad-$29-ff90e8?style=for-the-badge&logo=gumroad)](https://kirillopen.gumroad.com/l/xjajr)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
+
+
+> 🛍️ **Instant Download & Commercial License:** [Buy Playwright Stealth Scraper Kit on Gumroad ($29)](https://kirillopen.gumroad.com/l/xjajr)
 
 ## 🚀 Overview
 
